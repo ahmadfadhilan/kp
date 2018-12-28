@@ -115,6 +115,7 @@ class mahasiswaController extends Controller
         $b[$sem]=$y;
         $c[$sem]=$z;
       }
-        
+      dd($c);
+
     }
 }

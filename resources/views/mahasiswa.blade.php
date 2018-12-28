@@ -6,7 +6,7 @@
         <div class="col-md-8">
             <div class="card">
                 <div class="card-header" align="right">
-                    <a  href="" class="btn btn-success">Export to Excel</a>
+                    <a  href="{{ route('mahasiswa.excel') }}" class="btn btn-success">Export to Excel</a>
                 </div>
                 <div class="card-body">
                   Daftar Jumlah Mahasiwa:
