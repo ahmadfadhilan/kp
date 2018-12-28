@@ -5,18 +5,16 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header">Daftar Jumlah Mahasiwa:</div>
-
+                <div class="card-header" align="right">
+                    <a  href="" class="btn btn-success">Export to Excel</a>
+                </div>
                 <div class="card-body">
+                  Daftar Jumlah Mahasiwa:
                     @if (session('status'))
                         <div class="alert alert-success" role="alert">
                             {{ session('status') }}
                         </div>
                     @endif
-                    <div align="center">
-                      <a href="{{route('')}}" class="btn btn-success">Export to Excel</a>
-
-                    </div>
 
                     {!! Form::open(['url' => 'mahasiswa','class' => 'ajax']) !!}
                       {!! Form::selectYear('year', 2008, 2017,null,['placeholder'=>'Pilih Tahun ...']) !!}

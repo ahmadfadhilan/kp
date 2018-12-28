@@ -20,4 +20,7 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::resource('mahasiswa','mahasiswaController');
-Route::post('/mahasiswa', 'mahasiswaController@index');
+Route::post('mahasiswa', 'mahasiswaController@index');
+
+//Route::get('mahasiswa','HomeController@index');
+//Route::get('mahasiswa.excel','mahasiswaController@excel');
